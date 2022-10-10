@@ -1,0 +1,50 @@
+header{
+    background: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em 0.5em 1em;
+    width: 100vw;
+    .logo{
+        height: 3em;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+}
+
+nav{
+    position: absolute;
+    right: 0.5em;
+    top: 2em;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        .nav-links{
+            writing-mode: vertical-lr;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+
+            &:hover{
+                letter-spacing: 0;
+                transition-duration: 300ms;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    header{
+        .fa-bars{
+            display: block;
+            font-size: 1.5em;
+        }
+    }
+    nav{
+        display: none;
+    }
+}

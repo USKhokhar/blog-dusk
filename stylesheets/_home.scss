@@ -1,0 +1,12 @@
+#home{
+    background: $bg-img-home-desk no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px){
+    #home{
+        background: $bg-img-home-mob no-repeat;
+        background-size: cover;
+    }
+}
